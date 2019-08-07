@@ -27,9 +27,9 @@
 #### Via XML
 ```xml
 <com.sourcepad.core.multiprogressbar.MultiProgressBar
-    app:progress1Color="@color/x"
-    app:progress2Color="@color/y"
-    app:progress3Color="@color/z"
+    app:progress1Color="@color/yellow"
+    app:progress2Color="@color/blue"
+    app:progress3Color="@color/red"
     app:progressWidth="10dp"/>
 ```
 

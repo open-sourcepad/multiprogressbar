@@ -34,5 +34,16 @@
 ```
 
 ## Usage
-TODO upload on bintray
+``` groovy
+  dependencies{
+    implementation 'com.sourcepad.opensource:multiprogressbar:0.1'
+  }
+  
+  repositories {
+    maven{
+        url  "https://sourcepad.bintray.com/opensource"
+    }
+  }
+
+```
 

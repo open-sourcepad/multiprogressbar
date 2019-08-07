@@ -17,9 +17,11 @@
 ``` kotlin
   multiProgressbar.setColor(colorRes1:Int, colorRes2:Int, colorRes3:Int)
 ```
-#### Set current progress, use -1 value if no changes required
+#### Set current progress, use -1 value if no changes required or just use the named parameters to specify which progress to change
 ``` kotlin
   multiProgressbar.setProgress(progress1:Float,progress2:Float,progress3:Float)
+  multiProgressbar.setProgress(progress1=60f)
+
 ```
 
 #### Via XML

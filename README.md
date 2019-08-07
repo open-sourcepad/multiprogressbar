@@ -34,6 +34,7 @@
 ```
 
 ## Usage
+In your build.gradle, add the following:
 ``` groovy
   dependencies{
     implementation 'com.sourcepad.opensource:multiprogressbar:0.1'

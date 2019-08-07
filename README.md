@@ -3,23 +3,24 @@
 
 #### Set progressbar width
 ``` kotlin
-  multiProgressbar.setWidth(width)
+  multiProgressbar.setWidth(width:Float)
   ```
 #### Set color for each progressbar
 ``` kotlin
-  multiProgressbar.setColor(R.color.green, R.color.red, R.color.yellow)
+  multiProgressbar.setColor(colorRes1:Int, colorRes2:Int, colorRes3:Int)
 ```
 #### Set current progress, use -1 value if no changes required
 ``` kotlin
-  multiProgressbar.setProgress(progress1,progress2,progress3)
+  multiProgressbar.setProgress(progress1:Float,progress2:Float,progress3:Float)
 ```
 
 #### Via XML
 ```xml
+<com.sourcepad.core.multiprogressbar.MultiProgressBar
     app:progress1Color="@color/x"
     app:progress2Color="@color/y"
     app:progress3Color="@color/z"
-    app:progressWidth="10dp"
+    app:progressWidth="10dp"/>
 ```
 
 ## Usage

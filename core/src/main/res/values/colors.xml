@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="progress_color_1">@android:color/holo_orange_light</color>
+    <color name="progress_color_2">@android:color/holo_blue_light</color>
+    <color name="progress_color_3">@android:color/holo_red_light</color>
+
+
+    <color name="blue">#019FFD</color>
+    <color name="pink">#C389F8</color>
+    <color name="green">#AFD579</color>
+
+</resources>

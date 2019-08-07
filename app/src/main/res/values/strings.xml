@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MultiProgressbar</string>
+    <string name="all">All</string>
+    <string name="progress_1">Progress 1</string>
+    <string name="progress_2">Progress 2</string>
+    <string name="progress_3">Progress 3</string>
+    <string name="multiprogressbar">MultiProgressbar</string>
+</resources>

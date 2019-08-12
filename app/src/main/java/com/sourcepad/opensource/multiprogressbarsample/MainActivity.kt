@@ -1,9 +1,9 @@
-package com.sourcepad.multiprogressbar
+package com.sourcepad.opensource.multiprogressbarsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
-import com.sourcepad.core.multiprogressbar.MultiProgressBar
+import com.sourcepad.opensource.multiprogressbar.MultiProgressBar
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 

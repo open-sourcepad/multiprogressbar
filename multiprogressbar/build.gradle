@@ -1,6 +1,32 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+ext {
+    bintrayRepo = 'opensource'
+    bintrayName = 'multiprogressbar'
+    organization = 'sourcepad'
+
+    publishedGroupId = 'com.sourcepad.opensource'
+    libraryName = 'multiprogressbar'
+    artifact = 'multiprogressbar'
+
+    libraryDescription = 'Tri-colored customizable circular progressbar'
+
+    siteUrl = 'https://github.com/open-sourcepad/MultiProgressbar'
+    gitUrl = 'https://github.com/open-sourcepad/MultiProgressbar'
+
+    libraryVersion = '0.1.1'
+
+    developerId = 'dev'
+    developerName = 'Jose S/SourcePad'
+    developerEmail = 'dev@sourcepad.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 28
 
@@ -33,3 +59,10 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+tasks.withType(Javadoc).all {
+    enabled = false
+}
+
+apply from: '../install_dependency.gradle'
+apply from: '../bintray.gradle'

@@ -1,4 +1,4 @@
-package com.sourcepad.core.multiprogressbar
+package com.sourcepad.opensource.multiprogressbar
 
 import android.content.Context
 import android.graphics.Canvas
@@ -10,6 +10,7 @@ import android.util.TypedValue
 import android.view.View
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
+import com.sourcepad.core.multiprogressbar.R
 import kotlin.math.min
 
 /**
@@ -23,9 +24,15 @@ class MultiProgressBar @JvmOverloads constructor(
     var progress2Max = 100f
     var progress3Max = 100f
 
-    private var color1 = ContextCompat.getColor(context, R.color.progress_color_1)
-    private var color2 = ContextCompat.getColor(context, R.color.progress_color_2)
-    private var color3 = ContextCompat.getColor(context, R.color.progress_color_3)
+    private var color1 = ContextCompat.getColor(context,
+        R.color.progress_color_1
+    )
+    private var color2 = ContextCompat.getColor(context,
+        R.color.progress_color_2
+    )
+    private var color3 = ContextCompat.getColor(context,
+        R.color.progress_color_3
+    )
 
     private val paint: Paint = Paint()
 
@@ -48,19 +55,29 @@ class MultiProgressBar @JvmOverloads constructor(
 
     init {
 
-        context.theme.obtainStyledAttributes(attrs, R.styleable.MultiProgressBar, 0, 0).apply {
+        context.theme.obtainStyledAttributes(attrs,
+            R.styleable.MultiProgressBar, 0, 0).apply {
             try {
                 color1 = ContextCompat.getColor(
                     context,
-                    getResourceId(R.styleable.MultiProgressBar_progress1Color, R.color.progress_color_1)
+                    getResourceId(
+                        R.styleable.MultiProgressBar_progress1Color,
+                        R.color.progress_color_1
+                    )
                 )
                 color2 = ContextCompat.getColor(
                     context,
-                    getResourceId(R.styleable.MultiProgressBar_progress2Color, R.color.progress_color_2)
+                    getResourceId(
+                        R.styleable.MultiProgressBar_progress2Color,
+                        R.color.progress_color_2
+                    )
                 )
                 color3 = ContextCompat.getColor(
                     context,
-                    getResourceId(R.styleable.MultiProgressBar_progress3Color, R.color.progress_color_3)
+                    getResourceId(
+                        R.styleable.MultiProgressBar_progress3Color,
+                        R.color.progress_color_3
+                    )
                 )
 
                 barWidth = getDimension(R.styleable.MultiProgressBar_progressWidth, barWidth)
